@@ -50,8 +50,25 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "test": {  
+        "builder": "@angular-devkit/build-angular:karma",
+        "options": {
+          "polyfills": ["zone.js", "zone.js/testing"],
+          "tsConfig": "tsconfig.spec.json",
+          "karmaConfig": "karma.conf.js",
+          "assets": [],
+          "styles": [
+            "src/global_styles.css",
+            "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+            "node_modules/primeng/resources/primeng.css",
+            "node_modules/primeicons/primeicons.css"
+          ],
+          "scripts": []
         }
+      }
       },
+
       "prefix": "app",
       "projectType": "application",
       "root": "",

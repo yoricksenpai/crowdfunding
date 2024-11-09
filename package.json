@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npx ng serve",
-    "build": "npx ng build"
+    "build": "npx ng build",
+    "test": "npx ng test",                    
+    "test:watch": "npx ng test --watch",      
+    "test:coverage": "npx ng test --code-coverage"  
+
   },
   "dependencies": {
     "@angular/animations": "^18.2.11",
@@ -32,7 +36,10 @@
     "jasmine": "^5.4.0",
     "jasmine-core": "^5.4.0",
     "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
     "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
     "npm": "^10.9.0",
     "typescript": "~5.5.0"
   },

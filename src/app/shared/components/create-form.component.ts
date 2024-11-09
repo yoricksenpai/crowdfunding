@@ -23,7 +23,7 @@ import { Project } from '../models/project.model';
 
         <div class="form-group">
           <label for="goal">Objectif (€)</label>
-          <input type="number" id="goal" formControlName="goal">
+          <input type="number" id="goal"  min="0" formControlName="goal">
         </div>
 
         <div class="button-group">

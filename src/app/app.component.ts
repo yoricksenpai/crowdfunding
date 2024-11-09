@@ -11,6 +11,7 @@ import { ToastModule } from 'primeng/toast';
 import { ProjectCreationFormComponent } from './shared/components/create-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'; // Ajout de l'import
+import { finalize } from 'rxjs/operators';
 
 
 @Component({
@@ -157,7 +158,11 @@ fundProject(event: {project: Project, amount: number}) {
         return;
       }
 
-      this.contributionService.contribute(event.project.id, contribution).subscribe({
+      this.contributionService.contribute(event.project.id, contribution).pipe(
+        finalize(() => {
+          this.loadProjects(); // Recharge tous les projets après la contribution
+        })
+      ).subscribe({
         next: (updatedProject) => {
           const index = this.projects.findIndex(p => p.id === updatedProject.id);
           if (index !== -1) {

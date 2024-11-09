@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
       <div class="progress-bar-fill" [style.width.%]="getProgress()"></div>
     </div>
     <div>
-      <p>{{ raised }} raised of {{ goal }} goal <span> ({{ getProgressPercentage() }}%) </span></p>
+      <p>{{ raised }} € raised of {{ goal }} € goal <span> ({{ getProgressPercentage() }}%) </span></p>
     </div>
   `
 })
