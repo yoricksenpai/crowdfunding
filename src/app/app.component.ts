@@ -13,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'; // Ajout de l'import
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,

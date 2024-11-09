@@ -18,6 +18,7 @@ import { Project } from '../models/project.model';
           class="input"
           placeholder="Enter amount"
           [(ngModel)]="amount"
+          min="0"
         />
         <button type="button" (click)="submitFunding()" class="button">
           Contribute
