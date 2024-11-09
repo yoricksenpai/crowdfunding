@@ -1,0 +1,17 @@
+@import './_button.css';
+
+.card{
+    border-radius: 1em;
+    padding: 1em;
+    color: black;
+    box-shadow: 0px 0px 3px -1px black;
+}
+
+
+
+.about-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: black;
+}

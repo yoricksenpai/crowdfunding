@@ -1,0 +1,17 @@
+@import './_button.css';
+@import './_project-card.css';
+
+span{
+    color: seagreen;
+}
+
+.card{
+    margin: 1em;
+}
+.contribute{
+    display: flex;
+    gap: 1em;
+}
+input{
+    width: 12em;
+}

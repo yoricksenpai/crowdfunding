@@ -1,0 +1,96 @@
+@import './_funding-form.css';
+@import './_project-card.css';
+@import './_progress-bar.css';
+@import './_create-form.css';
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeicons/primeicons.css';
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    padding: 1em;
+    align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Styles personnalisés pour les notifications */
+
+
+:host ::ng-deep .p-toast {
+  z-index: 1000;
+}
+
+:host ::ng-deep .p-toast-message {
+  margin: 0 0 1rem 0;
+}
+
+.p-toast {
+    opacity: 1 !important;
+  }
+  
+  .p-toast .p-toast-message {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+  }
+
+.p-toast .p-toast-message {
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+.p-toast .p-toast-message.p-toast-message-success {
+  background-color: #e8f5e9;
+  border-left: 6px solid #43a047;
+}
+
+.p-toast .p-toast-message.p-toast-message-error {
+  background-color: #fbe9e7;
+  border-left: 6px solid #d32f2f;
+}
+
+.p-toast .p-toast-message.p-toast-warning {
+  background-color: #fff3e0;
+  border-left: 6px solid #fb8c00;
+}
+
+.p-toast .p-toast-message.p-toast-info {
+  background-color: #e3f2fd;
+  border-left: 6px solid #1976d2;
+}
+
+/* Animation des notifications */
+.p-toast .p-toast-message {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

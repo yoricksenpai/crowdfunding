@@ -1,0 +1,15 @@
+.progress-bar{
+    border-radius: 1em;
+    background-color: gainsboro;
+    height: 1em;
+    padding: 0em;
+
+}
+
+.progress-bar-fill {
+    background-color: green;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s;
+    border-radius: 1em;
+  }
